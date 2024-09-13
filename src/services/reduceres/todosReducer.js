@@ -10,7 +10,7 @@ const initialState = {
   error: null,
 };
 
-export const todoReducer = (state = initialState, action) => {
+export const todosReducer = (state = initialState, action) => {
   switch (action.type) {
     case GET_TODOS_REQUEST:
       return {

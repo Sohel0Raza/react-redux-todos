@@ -9,7 +9,7 @@ export const getAllTodo = () => async (dispatch) => {
   try {
     dispatch({ type: GET_TODOS_REQUEST });
     const res = await axios.get("https://jsonplaceholder.typicode.com/todos");
-    dispatch({ type: GET_TODOS_SUCCESS, paload: res.data });
+    dispatch({ type: GET_TODOS_SUCCESS, payload: res.data });
   } catch (error) {
     dispatch({ type: GET_TODOS_FAILED, payload: error.message });
   }
